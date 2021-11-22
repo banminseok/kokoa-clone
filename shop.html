@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>SKT</span>
+        <span>18:53</span>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-bell"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-signal"></i>
+        <span>100%</span>
+        <i class="fas fa-battery-quarter"></i>
+      </div>
+    </div>
+
+    <header class="top-header">
+      <h1 class="top-header__title">쇼핑</h1>
+      <div class="top-header__icons">
+        <span><i class="fas fa-qrcode fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><span class="red-dot"></span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+
+      </div>
+    </header>
+    <main class="shop-main main-padding">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-gift"></i>
+          <span>선물하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-store"></i>
+          <span>쇼핑하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-grin-beam"></i>
+          <span>캐릭터</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-satellite-dish"></i>
+          <span>쇼핑라이브</span>
+          <span class="red-dot"></span>
+        </div>
+      </div>
+      <form class="shop-search">
+        <input type="text" placeholder="코코아 쇼핑에서 검색하세요." />
+        <div class="shop-search__icon">
+          <i class="fas fa-search fa-lg"></i>
+        </div>
+        <div class="shop-search__tags">
+          <span class="shop-search__tag-title">추천 <i class="fas fa-info-circle"></i></span>
+          <div class="sop-search__tags-scroll-bar">
+            <div class="sop-search__tags-scroll">
+              <span class="shop-search__tag">인바디 체중계</span>
+              <span class="shop-search__tag">발열조끼</span>
+              <span class="shop-search__tag">뽑아쓰는 마스크팩</span>
+              <span class="shop-search__tag">어묵</span>
+              <span class="shop-search__tag">트틀넥 스웨터</span>
+              <span class="shop-search__tag">스탠리</span>
+              <span class="shop-search__tag">딥디크 향수</span>
+            </div>
+          </div>
+
+        </div>
+      </form>
+      <div class="live-shop">
+        <h2 class=""><i class="fas fa-satellite-dish fa-lg"></i> 코코아쇼핑라이브</h2>
+        <img class="live-shop__thumnail"
+          src="https://news.nateimg.co.kr/orgImg/nt/2021/10/15/163427505861690ef2ec94f.jpg" />
+        <div class="live-shop__icon">라이브 PICK</div>
+        <h1>칼칼~하고 시원한 라면이 생각날때</h1>
+        <span class="live-shop__text">
+          20시간 고아낸 육수와 바람에 말려 탱탱한 면발의 조합의 장인라면을 만나보세요.
+        </span>
+        <span class="live-shop__parts">
+          얼큰한맛1팩, 담백한맛1팩, 더미식 백미밥2개
+        </span>
+        <div class="live-shop__price-contents">
+          <span class="live-shop__dc">
+            14%
+          </span>
+          <span class="live-shop__price">
+            24,400원
+          </span>
+          <div class="live-sop__play">
+            <i class="fas fa-play fa-3x"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <div class="open-chat__title">
+            <h4>Open Chat </h4>
+            <span>Go to Openchat Home
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </span>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img src="https://i.imgur.com/tdnKkOU.png" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider">
+
+
+              </div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="https://i.imgur.com/pOe6cmc.jpg" ulr="[img]https://i.imgur.com/SpLWis1.jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>326</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <!--Friends-->
+          <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <!--Chats-->
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification  badge">8</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <!--Search-->
+          <a class="nav__link" href="shop.html">
+            <span class="material-icons nav__btn-local_mall">
+              local_mall
+            </span>
+            <!--<span class="material-icons-outlined nav__btn-local_mall">
+              local_mall
+            </span>-->
+          </a>
+        </li>
+        <li class="nav__btn">
+          <!--Find-->
+          <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div id="no-mobile">
+    <div class="no-mobile__text">
+      <span>Oops😅</span>
+      <span>Your screen is too big</span>
+      <span>가로 700px 까지 허용됩니다.</span>
+    </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
