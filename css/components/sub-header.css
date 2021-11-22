@@ -1,0 +1,35 @@
+.sub-header{
+  padding: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top :26px;
+  position: fixed;
+  width : 100%;  
+  z-index: 99;
+}
+.sub-header__title{
+  font-size:1.6rem;
+  font-weight: 600;
+}
+
+.sub-header__column{
+  width: 45%;
+}
+.sub-header__column:first-child{
+  width: 10%;
+  margin-right:auto;
+}
+.sub-header__column:nth-child(2){
+  text-align: left;
+}
+.sub-header__column:last-child{
+  margin-left:auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-header__column span:last-child{
+  margin-left: 20px;
+}

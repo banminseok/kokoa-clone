@@ -1,94 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
-  <link rel="stylesheet" href="css/styles.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chats - Kokoa Clone</title>
+  <title>Chats</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span>No Service</span>
-      <!--WIFI Icon-->
-      <i class="fas fa-wifi"></i>
+  <div id="app">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>SKT</span>
+        <span>18:53</span>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-bell"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-signal"></i>
+        <span>100%</span>
+        <i class="fas fa-battery-quarter"></i>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <span>18:53</span>
-    </div>
-    <div class="status-bar__column">
-      <span>100%</span>
-      <!--Battery Icon-->
-      <i class="fas fa-battery-full fa-lg"></i>
-      <!--Ligthning Icon-->
-      <i class="fas fa-bolt"></i>
-    </div>
-  </div>
 
-  <!-- 헤더 섹션 -->
-  <header class="screen-header">
-    <h1 class="screen-header__title">Chats</h1>
-    <div class="screen-header__icons">
-      <span><i class="fas fa-search fa-lg"></i></span>
-      <span><i class="far fa-comment-dots fa-lg"></i></span>
-      <span><i class="fas fa-music fa-lg"></i></span>
-      <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
-    </div>
-  </header>
+    <header class="top-header">
+      <h1 class="top-header__title">채팅</h1>
+      <div class="top-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><span class="red-dot"></span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
 
-  <main class="main-screen">
-    <a href="chat.html">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="https://i.imgur.com/tdnKkOU.png" class="user-component__avatar user-component__avatar--xl" />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Bmnt</h4>
-            <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+      </div>
+    </header>
+    <main class="chats-main main-padding">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="https://i.imgur.com/tdnKkOU.png" class="user-component__avatar user-component__avatar--lg">
+            <div class="user-component__text">
+              <h4 class="user-component__title">Bmnt</h4>
+              <h6 class="user-component__subtitle">그럼 수고하세요.</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">오전 09:22</span>
+            <span class="badge">2</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <span class="badge">1</span>
+      </a>
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="https://i.imgur.com/tS1jEP0.jpg" class="user-component__avatar user-component__avatar--lg">
+            <div class="user-component__text">
+              <h4 class="user-component__title">서영</h4>
+              <h6 class="user-component__subtitle">암호 뭐야?</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">어제</span>
+            <span class="badge">1</span>
+          </div>
         </div>
-      </div>
-    </a>
-
-  </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__btn">
-        <!--Friends-->
-        <a class="nav__link" href="friends.html">
-          <i class="far fa-user fa-2x"></i></a>
-      </li>
-      <li class="nav__btn">
-        <!--Chats-->
-        <a class="nav__link" href="chats.html">
-          <span class="nav__notification badge">1</span>
-          <i class="fas fa-comment fa-2x"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <!--Search-->
-        <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
-      </li>
-      <li class="nav__btn">
-        <!--Find-->
-        <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
-      </li>
-    </ul>
-  </nav>
-
+      </a>
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="user-component__avatar user-component__avatar--lg">
+            <div class="user-component__text">
+              <h4 class="user-component__title">삼성카드</h4>
+              <h6 class="user-component__subtitle">[삼성카드] 상생소비지원금 사용내역 및 잔액 안내...</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">11월20일</span>
+            <span class="badge">5</span>
+          </div>
+        </div>
+      </a>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <!--Friends-->
+          <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <!--Chats-->
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification  badge">8</span>
+            <i class="fas fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <!--Search-->
+          <a class="nav__link" href="shop.html">
+            <!--<span class="material-icons">
+              local_mall
+            </span>-->
+            <span class="material-icons-outlined nav__btn-local_mall">
+              local_mall
+            </span>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <!--Find-->
+          <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div id="no-mobile">
-    <span>Your screen is too big</span>
+    <div class="no-mobile__text">
+      <span>Oops😅</span>
+      <span>Your screen is too big</span>
+      <span>가로 700px 까지 허용됩니다.</span>
+    </div>
+
   </div>
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-  <script>
-
-  </script>
 </body>
 
 </html>
