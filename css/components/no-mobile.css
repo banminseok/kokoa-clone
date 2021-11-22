@@ -10,8 +10,16 @@
   top:0;
   font-size: 32px;
 }
-
-@media screen and (max-width:645px) {
+#no-mobile .no-mobile__text{
+  width : 500px;
+  height: 500px;
+  text-align: left;
+}
+.no-mobile__text span{
+  display: block;
+  margin-top: 10px;
+}
+@media screen and (max-width:710px) {
   #no-mobile{
     display: none;
   }
