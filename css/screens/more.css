@@ -1,23 +1,24 @@
-.more-screen .icon-row{
+.more-main .icon-row{
   margin-top: 35px;
 }
 
-.more-suggestions{
+
+.more-service{
   margin-top: 50px;
-  border-top: var(--main-border);
+  border-top: 1px solid rgba(0,0,0,0.3);
   padding-top: 40px;
 }
 
-.more-suggestions__title{
+.more-service__title{
   margin-bottom: 30px;
 }
 
-.more-suggestions__icons{
+.more-service__icons{
   display: flex;
 
 }
 
-.more-suggestions__icon{
+.more-service__icon{
   margin-right: 30px;
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@
   flex-direction: column;
 }
 
-.more-suggestions__icon-image{
+.more-service__icon-image{
   width: 60px;
   height: 60px;
   background-color: var(--yellow);
@@ -36,8 +37,8 @@
   margin-bottom: 10px;
 }
 
-.more-suggestions__icon-image i{
-  font-size: 32px;
+.more-service__icon-image i{
+  font-size: 2rem;
   color: white;
 
 }
